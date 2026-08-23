@@ -42,8 +42,8 @@ const SITE = {
   updates: [
     {
       date: "2026-08-24",
-      title: "First video",
-      body: "Thats right, LokeWorks uploaded its first video 🥳🥳🥳"
+      title: "Its live",
+      body: "Thats right, LokeWorks website is now up 🥳🥳🥳"
     },
     // Example of how to add the next one — copy/paste and edit:
     // {
