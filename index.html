@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<script>(function(){var t=localStorage.getItem("lokeworks-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LokeWorks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<main class="wrap">
+  <section class="hero" id="hero"></section>
+
+  <section class="about-block" id="about"></section>
+
+  <section>
+    <p class="section-eyebrow">Devlog</p>
+    <h2 class="section-title">What's happening</h2>
+    <div class="devlog-card">
+      <ul class="devlog" id="devlog-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="config.js"></script>
+<script src="render.js"></script>
+<script>
+  renderChrome("home");
+  renderHome();
+</script>
+</body>
+</html>

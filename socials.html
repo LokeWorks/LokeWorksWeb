@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<script>(function(){var t=localStorage.getItem("lokeworks-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Socials — LokeWorks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<main class="wrap">
+  <section class="page-intro">
+    <p class="section-eyebrow"></p>
+    <h2 class="section-title">Socials</h2>
+    <p class="page-intro-text">My socials.</p>
+  </section>
+
+  <section>
+    <div class="social-grid" id="social-grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="config.js"></script>
+<script src="render.js"></script>
+<script>
+  renderChrome("socials");
+  renderSocials();
+</script>
+</body>
+</html>

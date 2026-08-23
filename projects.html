@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<script>(function(){var t=localStorage.getItem("lokeworks-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — LokeWorks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<main class="wrap">
+  <section class="page-intro">
+    <p class="section-eyebrow"> </p>
+    <h2 class="section-title">Projects</h2>
+
+    <button class="series-toggle" id="small-ideas-toggle" type="button" aria-expanded="false" aria-controls="small-ideas-panel">
+      <span>Small Ideas</span>
+      <span class="series-toggle-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+    </button>
+    <div class="series-panel" id="small-ideas-panel" data-open="false">
+      <div class="series-panel-inner">
+        <div class="series-panel-body">
+          <p>Small Ideas is a dev log series where I challenge myself to turn one simple game mechanic or concept into a playable prototype. Each episode is a new idea, a chance to learn new Unreal Engine skills, and an experiment to see if a tiny concept can become something fun. If viewers really like one of the ideas, it might eventually grow into a full game.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="projects-list" id="projects-list"></div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="config.js"></script>
+<script src="render.js"></script>
+<script>
+  renderChrome("projects");
+  renderProjects();
+  initSeriesToggle("small-ideas-toggle", "small-ideas-panel");
+</script>
+</body>
+</html>
